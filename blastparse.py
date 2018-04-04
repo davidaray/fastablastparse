@@ -3,7 +3,7 @@ from Bio import SeqIO
 import argparse
 
 def get_args():
-	parser = argparse.ArgumentParser(description="Iterative pseudoreference generation with pseudo-it", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+	parser = argparse.ArgumentParser(description="Python seminar assignment. Will parse a fasta file into two files depending on whether or not a hit to any individual fasta entry is present in the blast output.", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 	parser.add_argument('-i', '--ifasta', type=str, help='Name of the peptide file', required=True)
 	parser.add_argument('-b', '--blastp', type=str, help='Name of the blastp file', required=True)
 	parser.add_argument('-o', '--outprefix', help='Prefix to use on output files', required=True)
